@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quest - Fun Science Quiz for Kids!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <h1>Science Quest</h1>
+            <p class="tagline">Explore the wonders of science!</p>
+        </header>
+
+        <div class="score-board">
+            <div class="score-item">
+                <span class="score-emoji">⭐</span>
+                <span class="score-label">Score</span>
+                <span class="score-value" id="score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-emoji">🔥</span>
+                <span class="score-label">Streak</span>
+                <span class="score-value" id="streak">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-emoji">🎯</span>
+                <span class="score-label">Accuracy</span>
+                <span class="score-value" id="accuracy">0%</span>
+            </div>
+        </div>
+
+        <div class="category-section" id="categorySection">
+            <h2>Choose a Topic!</h2>
+            <div class="categories" id="categories">
+                <!-- Categories loaded dynamically -->
+            </div>
+        </div>
+
+        <div class="quiz-section" id="quizSection" style="display: none;">
+            <div class="quiz-header">
+                <button class="back-btn" id="backBtn">← Back to Topics</button>
+                <div class="quiz-info">
+                    <span class="category-badge" id="currentCategory"></span>
+                    <span class="difficulty-badge" id="currentDifficulty"></span>
+                </div>
+            </div>
+
+            <div class="question-container" id="questionContainer">
+                <div class="question-emoji" id="questionEmoji">🔬</div>
+                <h3 class="question-text" id="questionText">Loading question...</h3>
+            </div>
+
+            <div class="options-container" id="optionsContainer">
+                <!-- Options loaded dynamically -->
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-icon" id="resultIcon"></div>
+                <div class="result-message" id="resultMessage"></div>
+                <div class="fun-fact" id="funFact"></div>
+                <div class="correct-answer" id="correctAnswer"></div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="nextBtn" style="display: none;">Next Question →</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-secondary" id="resetBtn">🔄 Start Over</button>
+        </div>
+
+        <footer>
+            <p>Keep exploring! Science is everywhere! 🌟</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
