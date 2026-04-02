@@ -8,7 +8,9 @@ export type Category =
   | 'physics'
   | 'earth'
   | 'oceans'
-  | 'dinosaurs';
+  | 'dinosaurs'
+  | 'energy'
+  | 'magnets';
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 

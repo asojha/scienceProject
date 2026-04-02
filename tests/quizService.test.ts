@@ -30,6 +30,9 @@ describe('QuizService', () => {
       expect(categoryIds).toContain('space');
       expect(categoryIds).toContain('animals');
       expect(categoryIds).toContain('dinosaurs');
+      expect(categoryIds).toContain('energy');
+      expect(categoryIds).toContain('magnets');
+      expect(categoryIds).toContain('human-body');
     });
   });
 
